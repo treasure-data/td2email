@@ -4,4 +4,5 @@
   "repository": "https://github.com/treasure-data/td2email",
   "logo": "https://cdn.rawgit.com/treasure-data/td2email/master/td2email.svg",
   "keywords": ["Treasure Data", "SendGrid", "Customer Retention"],
+  "addons": ["treasure-data", "sendgrid"]
 }
