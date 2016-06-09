@@ -7,6 +7,13 @@ require 'erb'
 require 'tilt'
 
 put '/' do
+  # requested params is formatted like
+  # /?email=target@email.com&template=retention_temp'
+  # payload is formatted like
+  # { "column_names": ["name", "number"],
+  #   "data": [['Daniel'], ['three']],
+  #   "column_type": ["string", "string"]
+  # }
   email = params[:email]
   template = params[:template]
   begin
