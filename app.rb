@@ -23,7 +23,6 @@ put '/' do
     if email && template_markdown
       send_email(email, template_markdown)
     end
-  end
   rescue => e
     STDERR.puts e.backtrace
   end
@@ -61,7 +60,6 @@ def create_template(template, payload)
   if File.exist?(template_path)
     template_markdown = Tilt::StringTemplate.new(template_path)
                         .render(Object.new, payload)
-    puts template_markdown
   end
   return template_markdown
 end
