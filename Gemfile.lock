@@ -35,3 +35,7 @@ DEPENDENCIES
   redcarpet
   sendgrid-ruby
   sinatra
+  tilt
+
+BUNDLED WITH
+   1.11.2
