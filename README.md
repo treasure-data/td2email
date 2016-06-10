@@ -53,7 +53,26 @@ This app is able to allow the following way:
 
     Then, if you specify `<THIS_APP's URL>/?email=takahashi@example.com&template=retention_temp` as Treasure Data's HTTP PUT URL, it sends the email template found in `/email_templates/retention_temp.markdown` to `takahashi@example.com`.
 
-- This app allow to embed custom variable in markdown.
+- This app allow to embed custom variable in markdown. Example is below.
+
+`retention_temp.markdown` is embeded `#{name}` and `#{number}`.
+
+```
+Dear #{name},
+
+It looks like you have not signed into our service for #{number} weeks. We really miss you!
+
+```
+
+If your Treasure Data query result is the above, you will get following mail.
+
+```
+Dear ["Daniel"],
+
+It looks like you have not signed into our service for ["Three"] weeks. We really miss you!
+
+```
+
 
 
 ## Easy Deploy on Heroku
