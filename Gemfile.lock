@@ -7,8 +7,8 @@ GEM
       domain_name (~> 0.5)
     mime-types (2.5)
     netrc (0.10.3)
-    rack (1.6.2)
-    rack-protection (1.5.3)
+    rack (1.6.13)
+    rack-protection (1.5.5)
       rack
     redcarpet (3.2.3)
     rest-client (1.8.0)
